@@ -52,6 +52,6 @@ if (require.main === module) {
 }
 
 // Run cronjob to sync subscribers
-cron.schedule('* * * * *', () => {
+cron.schedule('* 15 * * *', () => {
     syncSubscribers.sync()
 });
